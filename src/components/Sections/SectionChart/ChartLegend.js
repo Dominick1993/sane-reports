@@ -11,7 +11,7 @@ export const VALUE_FORMAT_TYPES = { minimal: 'minimal', stretch: 'stretch' };
 const DIGIT_PIXEL_SIZE = 8;
 const ICON_CONTAINER_PIXEL_SIZE = 25;
 const ChartLegend = ({ data, icon = 'circle', layout = CHART_LAYOUT_TYPE.vertical, height,
-                       onClick, style, showValue = true, valueDisplay = VALUE_FORMAT_TYPES.stretch }) => {
+                       onClick, style, showValue = false, valueDisplay = VALUE_FORMAT_TYPES.stretch }) => {
   let legendData = data || [];
   if (legendData.length === 0) {
     return <div />;
